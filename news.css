@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    border-color: black;
+    background-color: #F3CEA1;
+}
+
+body {
+    font-family: 'Newsreader', serif;
+    padding: 30px;
+}
+
+.brand{
+    font-family: Snell Roundhand;
+    font-weight: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.brand-header {
+    grid-area: header;
+   
+}
+
+@keyframes spin {
+    to {
+           transform: rotateY(80deg);
+           filter: drop-shadow( 16px, 16px 16px rgba(230, 218, 218, 0.5));
+    }
+ }
+
+ .brand-header {
+    animation: spin 1.5s infinite linear
+    
+ }
+
+.nav-links {
+    grid-area: nav;
+}
+
+.story-1-Community{
+    grid-area: story-1-Community;
+}
+
+.story-2-Politics{
+    grid-area: story-2-Politics;
+}
+
+.story-3-Sports{
+    grid-area: story-3-Sports;
+}
+
+.story-4-Entertainment{
+    grid-area: story-4-Entertainment;
+}
+
+.story-5-Classifieds{
+    grid-area: story-5-Classifieds;
+}
+
+.page {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "story-1-Community story-2-Politics story-3-Sports"
+    "story-4-Entertainment story-5-Classifieds story-5-Classifieds";
+
+}
+
